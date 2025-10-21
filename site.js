@@ -1,3 +1,11 @@
 let randNum = Math.random()*25;
 let wholNum = Math.trunc(randNum); 
-prompt('Test 3, what random number is after this sentence? ' + wholNum);
+
+// get the element by its actual id string
+const numDisplay = document.getElementById('numDisplay');
+
+if (numDisplay) {
+  numDisplay.textContent = wholNum;   // shows the number on the button
+} else {
+  console.log('numDisplay element not found');
+}
