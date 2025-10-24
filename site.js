@@ -1,11 +1,9 @@
-let randNum = Math.random()*25;
-let wholNum = Math.trunc(randNum); 
-
-// get the element by its actual id string
-const numDisplay = document.getElementById('numDisplay');
-
-if (numDisplay) {
-  numDisplay.textContent = wholNum;   // shows the number on the button
-} else {
-  console.log('numDisplay element not found');
-}
+let intNr = 1;
+let decNr = 1.5;
+let expNr = 1.4e15;
+let octNr = 0o10;
+//decimal version would be 8
+let hexNr = 0x3E8;
+//decimal version would be 1000
+let binNr = 0b101;
+//decimal version would be 5
